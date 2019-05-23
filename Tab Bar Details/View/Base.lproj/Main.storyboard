@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4dl-q2-iA4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="g7z-1A-2mq">
+            <objects>
+                <tabBarController id="4dl-q2-iA4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ITg-w1-zLj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zqB-Re-two" kind="relationship" relationship="viewControllers" id="eYW-hf-cY8"/>
+                        <segue destination="jIR-7a-1a4" kind="relationship" relationship="viewControllers" id="i9N-DT-ynB"/>
+                        <segue destination="tYV-1e-VpT" kind="relationship" relationship="viewControllers" id="ivp-Lx-zhJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzE-bX-Hfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="-235"/>
+        </scene>
+        <!--Apple.ru-->
+        <scene sceneID="ysy-YI-Jmh">
+            <objects>
+                <tableViewController id="zqB-Re-two" customClass="URLTableViewController" customModule="Tab_Bar_Details" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="14g-SM-tX2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="zqB-Re-two" id="ekF-OJ-9X2"/>
+                            <outlet property="delegate" destination="zqB-Re-two" id="Lgb-W7-WgH"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Apple.ru" id="UmO-NA-wcZ"/>
+                    <connections>
+                        <segue destination="rSJ-dA-Vzk" kind="show" identifier="DetailSegue" id="zQD-Ce-tor"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dQ-aN-Czq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-958"/>
+        </scene>
+        <!--SwiftBook.ru-->
+        <scene sceneID="qTA-sl-qFk">
+            <objects>
+                <tableViewController id="jIR-7a-1a4" customClass="URLTableViewController" customModule="Tab_Bar_Details" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="edS-Wv-PNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="jIR-7a-1a4" id="9Ta-Ef-aSE"/>
+                            <outlet property="delegate" destination="jIR-7a-1a4" id="lCT-jt-Cuh"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="SwiftBook.ru" id="TZ4-tZ-omc"/>
+                    <connections>
+                        <segue destination="rSJ-dA-Vzk" kind="show" identifier="DetailSegue" id="0Yb-th-Hba"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrq-wI-Rab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-235"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="BBo-Qb-O5q">
+            <objects>
+                <viewController id="L5R-HU-5mT" customClass="DetailViewController" customModule="Tab_Bar_Details" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="82i-mN-rk3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-q4-sWf">
+                                <rect key="frame" x="20" y="160" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C5n-q4-sWf" firstAttribute="leading" secondItem="7GO-Lt-nbb" secondAttribute="leading" constant="20" id="3Lo-Ax-hoD"/>
+                            <constraint firstItem="7GO-Lt-nbb" firstAttribute="trailing" secondItem="C5n-q4-sWf" secondAttribute="trailing" constant="20" id="Yjd-oR-uLw"/>
+                            <constraint firstItem="C5n-q4-sWf" firstAttribute="top" secondItem="7GO-Lt-nbb" secondAttribute="top" constant="20" id="jp7-Sr-ocI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7GO-Lt-nbb"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ert-qL-5uL">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="l9w-hF-N0f">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="L5R-HU-5mT" id="kLT-Qm-rIE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="l9w-hF-N0f" id="UKe-6d-ooc"/>
+                        <outlet property="lineLabel" destination="C5n-q4-sWf" id="7aO-HM-o6i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5V-sG-An0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="-227"/>
+        </scene>
+        <!--learnSwift.ru-->
+        <scene sceneID="kdx-Rf-UYn">
+            <objects>
+                <tableViewController id="tYV-1e-VpT" customClass="URLTableViewController" customModule="Tab_Bar_Details" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3aQ-qG-ezT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="tYV-1e-VpT" id="HdS-EB-yEB"/>
+                            <outlet property="delegate" destination="tYV-1e-VpT" id="RGn-Cd-sof"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="learnSwift.ru" id="l8C-oU-eW2"/>
+                    <connections>
+                        <segue destination="rSJ-dA-Vzk" kind="show" identifier="DetailSegue" id="QLP-OU-FWz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtK-NV-q4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="488"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="98q-o4-sby">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rSJ-dA-Vzk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="QeI-2Q-Icl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L5R-HU-5mT" kind="relationship" relationship="rootViewController" id="rnE-Iv-Tpa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eB-t3-SwP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1475" y="-227"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QLP-OU-FWz"/>
+    </inferredMetricsTieBreakers>
+</document>
