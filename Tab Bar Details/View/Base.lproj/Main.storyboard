@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="zqB-Re-two" id="Lgb-W7-WgH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Apple.ru" id="UmO-NA-wcZ"/>
+                    <tabBarItem key="tabBarItem" title="Apple.ru" image="apple" id="UmO-NA-wcZ"/>
                     <connections>
                         <segue destination="rSJ-dA-Vzk" kind="show" identifier="DetailSegue" id="zQD-Ce-tor"/>
                     </connections>
@@ -64,7 +64,7 @@
                             <outlet property="delegate" destination="jIR-7a-1a4" id="lCT-jt-Cuh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="SwiftBook.ru" id="TZ4-tZ-omc"/>
+                    <tabBarItem key="tabBarItem" title="SwiftBook.ru" image="swift" id="TZ4-tZ-omc"/>
                     <connections>
                         <segue destination="rSJ-dA-Vzk" kind="show" identifier="DetailSegue" id="0Yb-th-Hba"/>
                     </connections>
@@ -127,7 +127,7 @@
                             <outlet property="delegate" destination="tYV-1e-VpT" id="RGn-Cd-sof"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="learnSwift.ru" id="l8C-oU-eW2"/>
+                    <tabBarItem key="tabBarItem" title="learnSwift.ru" image="classroom" id="l8C-oU-eW2"/>
                     <connections>
                         <segue destination="rSJ-dA-Vzk" kind="show" identifier="DetailSegue" id="QLP-OU-FWz"/>
                     </connections>
@@ -155,6 +155,11 @@
             <point key="canvasLocation" x="1475" y="-227"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple" width="25" height="25"/>
+        <image name="classroom" width="25" height="25"/>
+        <image name="swift" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QLP-OU-FWz"/>
     </inferredMetricsTieBreakers>
