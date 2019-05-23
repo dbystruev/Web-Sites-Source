@@ -14,7 +14,9 @@
 		6995C3E12296FA0A00DDBC09 /* URLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6995C3E02296FA0A00DDBC09 /* URLTableViewController.swift */; };
 		6995C3EF2296FEAE00DDBC09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6995C3EE2296FEAE00DDBC09 /* DetailViewController.swift */; };
 		6995C3FB22972A0D00DDBC09 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6995C3FA22972A0D00DDBC09 /* Cell.swift */; };
-		6995C3FD229736F900DDBC09 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995C3FC229736F900DDBC09 /* Screenshot.png */; };
+		6995C3FF2297391600DDBC09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6995C3FE2297391600DDBC09 /* README.md */; };
+		6995C402229739C200DDBC09 /* DetailScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995C400229739C200DDBC09 /* DetailScreen.png */; };
+		6995C403229739C200DDBC09 /* ListScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995C401229739C200DDBC09 /* ListScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		6995C3E02296FA0A00DDBC09 /* URLTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTableViewController.swift; sourceTree = "<group>"; };
 		6995C3EE2296FEAE00DDBC09 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6995C3FA22972A0D00DDBC09 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		6995C3FC229736F900DDBC09 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
+		6995C3FE2297391600DDBC09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6995C400229739C200DDBC09 /* DetailScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DetailScreen.png; sourceTree = "<group>"; };
+		6995C401229739C200DDBC09 /* ListScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		6995C3C22296F9DE00DDBC09 = {
 			isa = PBXGroup;
 			children = (
+				6995C3FE2297391600DDBC09 /* README.md */,
 				6995C3CD2296F9DE00DDBC09 /* Tab Bar Details */,
 				6995C3CC2296F9DE00DDBC09 /* Products */,
 			);
@@ -91,7 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				6995C3D52296F9E300DDBC09 /* Assets.xcassets */,
-				6995C3FC229736F900DDBC09 /* Screenshot.png */,
+				6995C400229739C200DDBC09 /* DetailScreen.png */,
+				6995C401229739C200DDBC09 /* ListScreen.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 			files = (
 				6995C3D92296F9E300DDBC09 /* LaunchScreen.storyboard in Resources */,
 				6995C3D62296F9E300DDBC09 /* Assets.xcassets in Resources */,
+				6995C403229739C200DDBC09 /* ListScreen.png in Resources */,
+				6995C3FF2297391600DDBC09 /* README.md in Resources */,
 				6995C3D42296F9DE00DDBC09 /* Main.storyboard in Resources */,
-				6995C3FD229736F900DDBC09 /* Screenshot.png in Resources */,
+				6995C402229739C200DDBC09 /* DetailScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
